@@ -1,0 +1,42 @@
+:root{
+    --backgroundColor: rgb(160, 105, 105);
+    --inactiveTabColor: rgb(88, 21, 21);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: var(--backgroundColor);
+}
+
+header{
+    background-color: antiquewhite;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+
+    nav{
+        display: flex;
+        gap: 10px;
+
+        button{
+            background-color: var(--inactiveTabColor);
+            width: 100px;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            font-size: 16px;
+        }
+
+        button.activeTab{
+            background-color: var(--backgroundColor);
+        }
+        
+    }
+}
